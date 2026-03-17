@@ -77,7 +77,7 @@ nav ul li a{
 }
 
 .dropdown:hover .dropdown-menu,
-.dropdown:focus-within .dropdown-menu {
+.dropdown:active .dropdown-menu {
     display: block;
 }
 
