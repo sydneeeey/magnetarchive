@@ -26,6 +26,14 @@ body{
     align-items: center;
 }
 
+.logo-link {
+    text-decoration: none;
+}
+
+.logo-link:hover {
+    text-decoration: none;
+}
+
 /* "magnet archive" title formatting */
 h1{
     vertical-align: middle;
@@ -121,114 +129,7 @@ nav ul li a{
     .dropdown-toggle {
         font-size: 0.60rem;
     }
-
 }
-
-
-/* header box and background format*/
-/* .header{
-    min-height: 5rem;
-    padding: 0% 5%;
-    background: #3E3E3E;
-    display: flex;
-    align-items: center;
-} */
-
-/* "magnet archive" title formatting */
-/* h1{
-    vertical-align: middle;
-    color: #F5EFE9;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-} */
-
-/* navigation section of header */
-/* nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
-/* nav ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    padding: 0;
-    margin: 0;
-} */
-
-/* list */
-/* nav ul li{
-    list-style: none;
-    margin: 10px 30px;
-} */
-
-/* list text format */
-/* nav ul li a{
-    text-decoration: none;
-    color: #F5EFE9;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 0.75rem;
-} */
-
-/* .dropdown {
-    position: relative;
-} */
-
-/* .dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: none;
-    background:#3E3E3E;
-    padding: 5px 0;
-    min-width: 80px;
-    z-index: 1000;
-} */
-
-/* .dropdown-menu li {
-    display: block;
-    margin: 5px 15px;
-} */
-
-/* .dropdown:hover .dropdown-menu,
-.dropdown:active .dropdown-menu {
-    display: block;
-} */
-
-/* header responds to screen width, text size reduces */
-/* @media (max-width: 1000px){
-    .header{
-        height: 7rem;
-        padding: 0% 5%;
-        background: #3E3E3E;
-        display: flex;
-        align-items: center;
-    }   
-    h1{
-        font-size: 1rem;
-    }
-    nav ul li{
-        margin: 5px 15px;
-    }
-    nav ul li a{
-        font-size: 0.75rem;
-    }
-} */
-
-/* @media (max-width: 600px){
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
-    nav ul{
-        width: 100%;
-        justify-content: flex-start;
-    }
-} */
 
 /* ---------------------------------------------------------- */
 /* Year/Title Section */
@@ -999,6 +900,112 @@ font and icon sizes reduce to fit screen */
 /* OLD CODE */
 
 
+
+/* header box and background format*/
+/* .header{
+    min-height: 5rem;
+    padding: 0% 5%;
+    background: #3E3E3E;
+    display: flex;
+    align-items: center;
+} */
+
+/* "magnet archive" title formatting */
+/* h1{
+    vertical-align: middle;
+    color: #F5EFE9;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+} */
+
+/* navigation section of header */
+/* nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+/* nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+} */
+
+/* list */
+/* nav ul li{
+    list-style: none;
+    margin: 10px 30px;
+} */
+
+/* list text format */
+/* nav ul li a{
+    text-decoration: none;
+    color: #F5EFE9;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 0.75rem;
+} */
+
+/* .dropdown {
+    position: relative;
+} */
+
+/* .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: none;
+    background:#3E3E3E;
+    padding: 5px 0;
+    min-width: 80px;
+    z-index: 1000;
+} */
+
+/* .dropdown-menu li {
+    display: block;
+    margin: 5px 15px;
+} */
+
+/* .dropdown:hover .dropdown-menu,
+.dropdown:active .dropdown-menu {
+    display: block;
+} */
+
+/* header responds to screen width, text size reduces */
+/* @media (max-width: 1000px){
+    .header{
+        height: 7rem;
+        padding: 0% 5%;
+        background: #3E3E3E;
+        display: flex;
+        align-items: center;
+    }   
+    h1{
+        font-size: 1rem;
+    }
+    nav ul li{
+        margin: 5px 15px;
+    }
+    nav ul li a{
+        font-size: 0.75rem;
+    }
+} */
+
+/* @media (max-width: 600px){
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul{
+        width: 100%;
+        justify-content: flex-start;
+    }
+} */
+ 
 /* IMAGE -  I wanted image scale to change based on screen size, 
 later decided to have content stack instead of changing only image scale */
 
