@@ -83,10 +83,6 @@ nav ul li a{
     margin: 5px 15px;
 }
 
-.dropdown:focus-within .dropdown-menu {
-    display: block;
-}
-
 .dropdown.open .dropdown-menu {
     display: block;
 }
