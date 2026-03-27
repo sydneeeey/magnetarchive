@@ -87,6 +87,10 @@ nav ul li a{
     display: block;
 }
 
+.dropdown.open .dropdown-menu {
+    display: block;
+}
+
 @media (hover:hover) {
     .dropdown:hover .dropdown-menu {
         display: block;
