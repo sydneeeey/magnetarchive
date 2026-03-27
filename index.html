@@ -26,53 +26,53 @@ document.addEventListener("DOMContentLoaded", () => {
 
     header.addEventListener("click", () => {
 
-      const table = header.closest("table");
-      const tbody = table.querySelector("tbody");
-      const rows = Array.from(tbody.querySelectorAll("tr"));
+        const table = header.closest("table");
+        const tbody = table.querySelector("tbody");
+        const rows = Array.from(tbody.querySelectorAll("tr"));
 
-      rows.sort((rowA, rowB) => {
+        rows.sort((rowA, rowB) => {
 
-    let cellA = rowA.children[columnIndex];
-    let cellB = rowB.children[columnIndex];
+            let cellA = rowA.children[columnIndex];
+            let cellB = rowB.children[columnIndex];
 
-    let A = cellA.innerText.trim();
-    let B = cellB.innerText.trim();
+            let A = cellA.innerText.trim();
+            let B = cellB.innerText.trim();
 
-    if (A === "" && cellA.querySelector("img")) {
-    A = cellA.querySelector("img").alt;
-    }
+            if (A === "" && cellA.querySelector("img")) {
+                A = cellA.querySelector("img").alt;
+            }
 
-    if (B === "" && cellB.querySelector("img")) {
-    B = cellB.querySelector("img").alt;
-    }
+            if (B === "" && cellB.querySelector("img")) {
+                B = cellB.querySelector("img").alt;
+            }
 
-    if (/^\d{4}\/\d{2}$/.test(A) && /^\d{4}\/\d{2}$/.test(B)) {
-    A = new Date(A.replace("/", "-"));
-    B = new Date(B.replace("/", "-"));
-    return ascending ? A - B : B - A;
-    }
+            if (/^\d{4}\/\d{2}$/.test(A) && /^\d{4}\/\d{2}$/.test(B)) {
+                A = new Date(A.replace("/", "-"));
+                B = new Date(B.replace("/", "-"));
+                return ascending ? A - B : B - A;
+            }
 
-    return ascending
-    ? A.localeCompare(B, undefined, { numeric: true, sensitivity: "base" })
-    : B.localeCompare(A, undefined, { numeric: true, sensitivity: "base" });
+            return ascending
+                ? A.localeCompare(B, undefined, { numeric: true, sensitivity: "base" })
+                : B.localeCompare(A, undefined, { numeric: true, sensitivity: "base" });
 
-});
+        });
 
-      ascending = !ascending;
+        ascending = !ascending;
 
-      rows.forEach(row => tbody.appendChild(row));
+        rows.forEach(row => tbody.appendChild(row));
 
     });
 
-  });
+    });
 
-});
+    const dropdown = document.querySelector('.dropdown');
+    const toggle = document.querySelector('.dropdown-toggle');
 
-const dropdown = document.querySelector('.dropdown');
-const toggle = document.querySelector('.dropdown-toggle');
-
-toggle.addEventListener('click', function () {
+    toggle.addEventListener('click', function () {
     dropdown.classList.toggle('open');
+    });
+
 });
 </script>
 
