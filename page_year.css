@@ -1,3 +1,6 @@
+/* ---------------------------------------------------------- */
+/* All Body */
+
 body{
     margin: 0; /* header can spread the full page length, without a gap */
     background-color: #F5EFE9;
@@ -10,6 +13,9 @@ body{
     transparent 118px
     );
 }
+
+/* ---------------------------------------------------------- */
+/* Header */
 
 .header{
     /* width: 100%; */
@@ -62,6 +68,8 @@ nav ul li a{
     display: none;
     position: absolute;
     top: 100%;
+    /* left: 0;
+    transform: none; */
     left: 50%;
     transform: translateX(-50%);
     background:#3E3E3E;
@@ -75,9 +83,24 @@ nav ul li a{
     margin: 5px 15px;
 }
 
-.dropdown:hover .dropdown-menu,
-.dropdown:active .dropdown-menu {
+.dropdown:focus-within .dropdown-menu {
     display: block;
+}
+
+@media (hover:hover) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
+
+.dropdown-toggle {
+    background: none;
+    border: none;
+    color: #f5efe9;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 0.75rem;
+    cursor: pointer;
 }
 
 /* header responds to screen width, text size reduces */
@@ -95,6 +118,10 @@ nav ul li a{
     nav ul li a{
         font-size: 0.60rem;
     }
+    .dropdown-toggle {
+        font-size: 0.60rem;
+    }
+
 }
 
 
@@ -203,7 +230,9 @@ nav ul li a{
     }
 } */
 
-/*  */
+/* ---------------------------------------------------------- */
+/* Year/Title Section */
+
 .year-container{
     display: flex;
     align-items: center;
@@ -227,6 +256,7 @@ nav ul li a{
     letter-spacing: -0.2rem;
 }
 
+/* wide titles following year format */
 .year2{
     background-color: #3E3E3E;
     padding: 1.2rem;
@@ -266,6 +296,7 @@ nav ul li a{
     text-align: center;
 }
 
+/* subtitle following country format */
 .countries2{
     /* background-color: aquamarine; */
     padding: 0rem;
@@ -282,6 +313,7 @@ nav ul li a{
     text-align: center;
 }
 
+
 .destination-container{
     display: grid;
     grid-gap: 10px;
@@ -296,6 +328,9 @@ hr{
     height: 1.5px;
     background-color: #3E3E3E;
 }
+
+/* ---------------------------------------------------------- */
+/* Destination */
 
 .destination {
     /* background-color: aqua; */
@@ -315,6 +350,7 @@ hr{
 
 }
 
+/* sections for about page, following destination format */
 .about-destination {
     text-align: center;
 
@@ -331,6 +367,7 @@ hr{
 
 }
 
+/* general place format */
 .place{
     /* background-color: aqua; */
     grid-area: place;
@@ -364,7 +401,7 @@ hr{
     }
 }
 
-/* background formatting for each country */
+/* background formatting for each country, within the .place section */
 .america-place{
     background-color: #4C6473;
     padding: 0.5rem;
@@ -618,6 +655,8 @@ hr{
     padding: 0.5rem;
 }
 
+/* ---------------------------------------------------------- */
+/* Magnets */
 
 /* section with image, icon, title and description */
 .magnet-container{
@@ -635,18 +674,15 @@ hr{
     text-align: center; /* centered in the image grid section */
 }
 
+/* wide format images (e.g. colour graphic on about page */
 .image2 {
     grid-column: 1;
     margin: 0.5rem;
+    margin-left: 4.5rem;
     text-align: center; /* centered in the image grid section */
 }
 
-.icon2{
-    grid-column: 1;
-    margin: 0.5rem;
-    text-align: center;
-}
-
+/* holds icon, magnet title and body text */
 .info{
     grid-column: 2;
     display: flex;
@@ -654,20 +690,6 @@ hr{
     justify-content: start;
     /* align-items: center;
     gap: 1rem; */
-}
-
-.about-info{
-    grid-column: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-}
-
-.about-info .about-title-row{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-left: 15rem;
 }
 
 .info .title-row{
@@ -686,13 +708,11 @@ hr{
     /* align-content: center; */
 }
 
-.about-info .about-title-row .icon{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    height: 4rem;
+/* icons on home page */
+.icon2{
+    grid-column: 1;
     margin: 0.5rem;
-    filter: drop-shadow(0 0 2rem #dfd5ca);
+    text-align: center;
 }
 
 .info .title-row .magnet-title {
@@ -704,17 +724,6 @@ hr{
     font-size: 1.75rem;
     text-indent: 1rem;
     line-height: 4rem;
-}
-
-.about-info .about-title-row .about-title{
-    padding: 1rem;
-    border: 0rem;
-    margin-top: 0.5rem;
-
-    color: #3E3E3E;
-    font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 1.10rem;
 }
 
 .info main {
@@ -730,6 +739,43 @@ hr{
     font-size: 1.10rem;
 }
 
+/* ---------------------------------------------------------- */
+/* About Page */
+
+.about-info{
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.about-info .about-title-row{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 15rem;
+}
+
+.about-info .about-title-row .icon{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height: 4rem;
+    margin: 0.5rem;
+    filter: drop-shadow(0 0 2rem #dfd5ca);
+}
+
+.about-info .about-title-row .about-title{
+    padding: 1rem;
+    border: 0rem;
+    margin-top: 0.5rem;
+
+    color: #3E3E3E;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 1.10rem;
+}
+
 .about-info main{
     padding: 1rem;
     border: 0rem;
@@ -742,6 +788,7 @@ hr{
     font-size: 1.10rem;
 
 }
+
 /* layout changes based on screen width, images move above info section */
 @media (max-width: 1000px) {
     .magnet-container {
@@ -765,13 +812,186 @@ hr{
     }
 }
 
-/* footer section to end page, no text within it yet */
+/* ---------------------------------------------------------- */
+/* Footer */
+
 .footer{
     height: 10rem;
     /* padding: 0% 5%; */
     background: #3E3E3E;
     /* display: flex;
     align-items: center; */
+}
+
+/* ---------------------------------------------------------- */
+/* General Text Formatting */
+
+h2{
+    color: #3E3E3E;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 1.75rem;
+    text-indent: 1rem;
+    line-height: 4rem;
+    margin-left: 7rem;
+}
+
+main{
+    padding: 1rem;
+    border: 0rem;
+    margin-top: 0.5rem;
+    margin-left: 7rem;
+
+    color: #3E3E3E;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 1.10rem;
+}
+
+/* ---------------------------------------------------------- */
+/* Map */
+
+.mapdiv{
+    /* background-color: #F5EFE9; */
+    display: flex;
+    text-align: center;
+    padding: 5rem;
+}
+
+.mapdiv-havenot{
+    position: absolute;
+}
+
+.mapdiv-have{
+    position: absolute;
+    z-index: 2;
+    transition: fill 0.01s;
+}
+
+.mapdiv-pins{
+    position: absolute;
+    z-index: 3;
+}
+
+.mapdiv-pins :hover {
+fill: #ffffff;
+stroke: #000;
+
+}
+
+.pins :hover {
+    fill:#fff;
+    stroke: #412B17;
+    stroke-width: 2;
+}
+
+@media (max-width: 1000px){
+    .mapdiv{
+        padding: 1rem;
+    }
+}
+
+/* ---------------------------------------------------------- */
+/* Magnet Catalogue */
+
+/* holds the magnet catalogue */
+.table-container { 
+    width: 100%;
+    overflow-x: auto;
+}
+/* defines table */
+table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin: 2rem 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+/* table header */
+thead th {
+  position: sticky;
+  top: 0;
+  background: #F5EFE9;
+  color: #3E3E3E;
+  font-weight: 400;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  cursor: pointer;
+  user-select: none;
+  border-bottom: 1.5px solid #3E3E3E;
+  border-top: 1.5px solid #3E3E3E;
+}
+
+/* header changes colour on hover */
+th:hover {
+  background: #3E3E3E;
+  color: #F5EFE9;
+}
+
+/* table body text */
+tbody td{
+    color: #3E3E3E;
+    background: #F5EFE9;
+    padding: 1rem;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #3E3E3E;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.clickable a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #3E3E3E;
+  text-decoration: none;
+
+}
+
+/* header and body text scaling */
+th, td {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    /* cursor: pointer;
+    user-select: none; */
+}
+
+/* link colour */
+tbody td a {
+    color: #4C6473;
+}
+
+/* magnet category icon */
+.icon3 img{
+    width: auto;
+    height: 30px;
+}
+
+.preview img {
+    width: 50px;
+    height: auto;
+
+}
+
+/* table scaling for small screen sizes, 
+font and icon sizes reduce to fit screen */
+@media (max-width:600px){
+    tbody td{
+        padding: 0.5rem;
+        font-size: 0.65rem;
+    }
+    thead th {
+        padding: 0.75rem;
+        font-size: 0.7rem;
+
+    }
+    .icon3 img{
+        height: 15px;
+    }
+    .preview img{
+        width: 25px;
+    }
 }
 
 /* -------------------------------------------------------------------------- */
@@ -821,138 +1041,3 @@ later decided to have content stack instead of changing only image scale */
         text-align: left;
     }
 } */
-
-h2{
-    color: #3E3E3E;
-    font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 1.75rem;
-    text-indent: 1rem;
-    line-height: 4rem;
-    margin-left: 7rem;
-}
-
-main{
-    padding: 1rem;
-    border: 0rem;
-    margin-top: 0.5rem;
-    margin-left: 7rem;
-
-    color: #3E3E3E;
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 1.10rem;
-}
-
-.mapdiv{
-    /* background-color: #F5EFE9; */
-    display: flex;
-    text-align: center;
-    padding: 5rem;
-}
-
-.mapdiv-havenot{
-    position: absolute;
-}
-
-.mapdiv-have{
-    position: absolute;
-    z-index: 2;
-    transition: fill 0.01s;
-}
-
-.mapdiv-pins{
-    position: absolute;
-    z-index: 3;
-}
-
-.mapdiv-pins :hover {
-fill: #ffffff;
-stroke: #000;
-
-}
-
-.pins :hover {
-    fill:#fff;
-    stroke: #412B17;
-    stroke-width: 2;
-}
-
-@media (max-width: 1000px){
-    .mapdiv{
-        padding: 1rem;
-    }
-}
-
-
-.table-container {
-    width: 100%;
-    overflow-x: auto;
-}
-
-table{
-    width: 100%;
-    border-collapse: collapse;
-    table-layout: fixed;
-    margin: 2rem 0;
-    font-family: 'Roboto Condensed', sans-serif;
-}
-
-thead th {
-  position: sticky;
-  top: 0;
-  background: #F5EFE9;
-  color: #3E3E3E;
-  font-weight: 400;
-  padding: 1rem;
-  text-transform: uppercase;
-  font-size: 1rem;
-  cursor: pointer;
-  user-select: none;
-  border-bottom: 1.5px solid #3E3E3E;
-  border-top: 1.5px solid #3E3E3E;
-}
-
-tbody td{
-    background: #F5EFE9;
-    padding: 1rem;
-    font-size: 0.95rem;
-    border-bottom: 1px solid #3E3E3E;
-    text-align: center;
-    vertical-align: middle;
-}
-
-th, td {
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    cursor: pointer;
-    user-select: none;
-}
-
-th:hover {
-  background: #3E3E3E;
-  color: #F5EFE9;
-
-}
-
-tbody td a {
-    color: #4C6473;
-}
-
-.icon img {
-    width: auto;
-    height: 30px;
-}
-
-@media (max-width:600px){
-    tbody td{
-        padding: 0.5rem;
-        font-size: 0.75rem;
-    }
-    th {
-        font-size: 0.8rem;
-    }
-    .icon img {
-        height: 20px;
-    }
-}
