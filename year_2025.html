@@ -16,17 +16,27 @@
 
 <body>
 
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const dropdown = document.querySelector('.dropdown');
+    const toggle = document.querySelector('.dropdown-toggle');
+
+    toggle.addEventListener('click', () => {
+        dropdown.classList.toggle('open');
+    });
+
+});
+</script>
+
 <div class="header">
     <nav>
-        
-        <!-- <div class="header-icon">
-            <img src="icons/lightning.svg" height="20px">
-        </div> -->
-        <h1><img src="icons/lightning.svg" height="20px"> Magnet Archive</h1>
-        <ul> <!-- link to other pages eventually -->
-            <li><a href="index.html">Home</a></li>
+        <a href="index.html" class="logo-link">
+            <h1><img src="icons/lightning.svg" height="20px"> Magnet Archive</h1>
+        </a>
+        <ul>
             <li class="dropdown">
-                <a>Year</a>
+                <button class="dropdown-toggle">Year</button>
                 <ul class="dropdown-menu">
                     <li><a href="year_2018.html">2018</a></li>
                     <li><a href="year_2019.html">2019</a></li>
@@ -37,7 +47,7 @@
                     <li><a href="year_2025.html">2025</a></li>
                 </ul>
             </li>
-            <li><a href="uncategorized.html">Uncategorized</a></li>
+            <li><a href="other.html">Other</a></li>
             <li><a href="about.html">About</a></li>
         </ul>
     </nav>
