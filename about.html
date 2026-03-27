@@ -16,17 +16,27 @@
 
 <body>
 
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const dropdown = document.querySelector('.dropdown');
+    const toggle = document.querySelector('.dropdown-toggle');
+
+    toggle.addEventListener('click', () => {
+        dropdown.classList.toggle('open');
+    });
+
+});
+</script>
+
 <div class="header">
     <nav>
-        
-        <!-- <div class="header-icon">
-            <img src="icons/lightning.svg" height="20px">
-        </div> -->
-        <h1><img src="icons/lightning.svg" height="20px"> Magnet Archive</h1>
-        <ul> <!-- link to other pages eventually -->
-            <li><a href="index.html">Home</a></li>
+        <a href="index.html" class="logo-link">
+            <h1><img src="icons/lightning.svg" height="20px"> Magnet Archive</h1>
+        </a>
+        <ul>
             <li class="dropdown">
-                <a>Year</a>
+                <button class="dropdown-toggle">Year</button>
                 <ul class="dropdown-menu">
                     <li><a href="year_2018.html">2018</a></li>
                     <li><a href="year_2019.html">2019</a></li>
@@ -37,7 +47,7 @@
                     <li><a href="year_2025.html">2025</a></li>
                 </ul>
             </li>
-            <li><a href="uncategorized.html">Uncategorized</a></li>
+            <li><a href="other.html">Other</a></li>
             <li><a href="about.html">About</a></li>
         </ul>
     </nav>
@@ -185,7 +195,24 @@
             <hr>
             </section>
 
-<main>The structure of this project started with a series of mind maps and diagrams. First, I divided the magnets by the year they were purchased, and then organized them even further from there.</main>
+<main><b>Countries are also colour-coded, because why not?</b></main>
+
+<div class="magnet-container">
+    <div class="image2">
+        <img src="resources/colours.svg" alt="colours" height="360px">
+    </div>
+
+    <div class="info">
+            <main>
+                Each country has its own assigned colour. The palette actually comes from another motion graphic project I made, again, because why not.
+                <br>
+                <br>
+                Like what you see? Here are the colours and their HEX codes!
+            </main>
+    </div>
+</div>
+
+<!-- <main>The structure of this project started with a series of mind maps and diagrams. First, I divided the magnets by the year they were purchased, and then organized them even further from there.</main> -->
 <br id="icons">
 <main><b>Each magnet category has a corresponding icon:</b></main>
 <br>
@@ -243,23 +270,6 @@
 
 <br>
 <br>
-
-<main><b>Countries are also colour-coded, because why not?</b></main>
-
-<div class="magnet-container">
-    <div class="image2">
-        <img src="resources/colours.svg" alt="colours" height="360px">
-    </div>
-
-    <div class="info">
-            <main>
-                Each country has its own assigned colour. The palette actually comes from another motion graphic project I made, again, because why not.
-                <br>
-                <br>
-                Like what you see? Here are the colours and their HEX codes!
-            </main>
-    </div>
-</div>
 
 
 <main><b>Fonts used:</b></main>
