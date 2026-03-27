@@ -98,6 +98,8 @@ nav ul li a{
 }
 
 .dropdown-toggle {
+    all: unset;
+    
     background: none;
     border: none;
     color: #f5efe9;
