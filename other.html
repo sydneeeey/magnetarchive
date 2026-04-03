@@ -3,7 +3,7 @@
 <head>
 <title>Magnet Archive - Uncategorized</title> <!-- tab name -->
 <link rel="icon" type="image/x-icon" href="favicon/other.svg"> <!-- designed a favicon for each year/page -->
-<link rel="stylesheet" href="other.css">
+<link rel="stylesheet" href="page_year.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- screen size -->
 
 <!-- linked fonts -->
@@ -15,9 +15,10 @@
 </head>
 
 <body>
-
 <script>
 document.addEventListener("DOMContentLoaded", () => {
+
+// hover dropdown works on mobile
 
     const dropdown = document.querySelector('.dropdown');
     const toggle = document.querySelector('.dropdown-toggle');
@@ -32,10 +33,10 @@ document.addEventListener("DOMContentLoaded", () => {
 <div class="header">
     <nav>
         <a href="index.html" class="logo-link">
-            <h1><img src="icons/lightning.svg" height="20px"> Magnet Archive</h1>
+            <h1><img src="icons/lightning.svg" height="20px"> Magnet Archive</h1> <!-- site header and logo, links to home page -->
         </a>
         <ul>
-            <li class="dropdown">
+            <li class="dropdown"> <!-- year pages contained within a dropdown menu -->
                 <button class="dropdown-toggle">Year</button>
                 <ul class="dropdown-menu">
                     <li><a href="year_2018.html">2018</a></li>
@@ -55,14 +56,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 <br><br><br>
 
-<!-- top section of each page -->
-            <div class="year-container">
-                <div class="year">Uncategorized</div>
-            </div>
+<!-- Title - each page begins with the same header and subhead style -->
+<div class="year-container">
+    <div class="year2">Uncategorized</div>
+</div>
 
-            <div class="countries-container">
-            <div class="countries">Date or location unknown.</div>
-            </div>
+<div class="countries-container">
+    <div class="countries">Date or location unknown.</div>
+</div>
 <!------------------------------>
 
 <!-- begin magnet section, repeatable format for each year page -->
@@ -217,7 +218,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <hr>
 
             <div class="year-container">
-                <div class="year">Gifted</div>
+                <div class="year2">Gifted</div>
             </div>
 
             <div class="countries-container">
@@ -324,7 +325,7 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
 
             <section>
-            <hr id="Reykjavík">
+            <hr id="reykjavik">
             <div class="destination-container">
                 <div class="destination">destination</div> 
 
@@ -1004,11 +1005,22 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
             </div>
 
-
-
 <br>
 <br>
 
-<div class="footer"></div>
+<!-- back to top "button" -->
+<div class="clickable2">
+    <a href="other.html#top">Back to Top</a>
+</div>
+
+<!-- Footer - links to About page -->
+<div class="footer">
+    <br>
+    <br>
+    &#9733; Want to learn more about this website? &#9733;
+    <div class="clickable2"> 
+        <a href="about.html">Click Here!</a>
+    </div>
+</div>
 
 </body>
