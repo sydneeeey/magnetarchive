@@ -19,6 +19,8 @@
 <script>
 document.addEventListener("DOMContentLoaded", () => {
 
+// hover dropdown works on mobile
+
     const dropdown = document.querySelector('.dropdown');
     const toggle = document.querySelector('.dropdown-toggle');
 
@@ -32,10 +34,10 @@ document.addEventListener("DOMContentLoaded", () => {
 <div class="header">
     <nav>
         <a href="index.html" class="logo-link">
-            <h1><img src="icons/lightning.svg" height="20px"> Magnet Archive</h1>
+            <h1><img src="icons/lightning.svg" height="20px"> Magnet Archive</h1> <!-- site header and logo, links to home page -->
         </a>
         <ul>
-            <li class="dropdown">
+            <li class="dropdown"> <!-- year pages contained within a dropdown menu -->
                 <button class="dropdown-toggle">Year</button>
                 <ul class="dropdown-menu">
                     <li><a href="year_2018.html">2018</a></li>
@@ -55,14 +57,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
 <br><br><br>
 
-<!-- top section of each page -->
-            <div class="year-container">
-                <div class="year">2021</div>
-            </div>
+<div class="page-wrapper">
 
-            <div class="countries-container">
-            <div class="countries">Canada</div>
-            </div>
+<!-- Title - each page begins with the same header and subhead style -->
+<div class="year-container">
+    <div class="year">2021</div>
+</div>
+
+<div class="countries-container">
+    <div class="countries">Canada</div>
+</div>
 <!------------------------------>
 
 <!-- begin magnet section, repeatable format for each year page -->
@@ -93,8 +97,10 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     
                     <main>
-                        08/2021 <br><br>
-
+                        Road trip from Waterloo to Montreal, Québec City and Ottawa.
+                        <br><br>
+                        08/05/2021 <br><br>
+                        After arriving, we explored Rue De La Commune and the Old Port of Montreal.
                     </main>
                 </div>
             </div>
@@ -114,8 +120,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     
                     <main>
-                        08/2021 <br><br>
-
+                        08/06/2021 <br><br>
+                        We explored the city, walking around Bell Centre and returned to the Old Port of Montreal.
                     </main>
                 </div>
             </div>
@@ -135,8 +141,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     
                     <main>
-                        08/2021 <br><br>
-
                     </main>
                 </div>
             </div>
@@ -156,8 +160,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     
                     <main>
-                        08/2021 <br><br>
-
                     </main>
                 </div>
             </div>
@@ -174,27 +176,6 @@ document.addEventListener("DOMContentLoaded", () => {
             <hr>
             </section>
 
-            <div class="magnet-container" id="ChateauFrontenac">
-                <div class="image">
-                    <img src="resources/chateauFrontenac.png" alt="chateau frontenac" height="325px">
-                </div>
-
-                <div class="info">
-                    <div class="title-row">
-                        <div class="icon">
-                            <img src="icons/landmark.svg" alt="landmark" width="40px">
-                        </div>
-                        
-                        <div class="magnet-title">Chateau Frontenac</div>
-                    </div>
-                    
-                    <main>
-                        08/2021 <br><br>
-
-                    </main>
-                </div>
-            </div>
-
             <div class="magnet-container" id="Québec1">
                 <div class="image">
                     <img src="resources/quebec1.png" alt="quebec" height="135px">
@@ -210,8 +191,27 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     
                     <main>
-                        08/2021 <br><br>
+                        08/07/2021 <br><br>
+                        Driving from Montréal to Québec, we stopped at Sanctuaire Sainte-Anne-de-Beaupré and Montmorency Falls. Once we arrived, we walked around Québec City seeing sights like the Umbrella Alley and Le Château Frontenac.
+                    </main>
+                </div>
+            </div>
 
+            <div class="magnet-container" id="ChateauFrontenac">
+                <div class="image">
+                    <img src="resources/chateauFrontenac.png" alt="chateau frontenac" height="325px">
+                </div>
+
+                <div class="info">
+                    <div class="title-row">
+                        <div class="icon">
+                            <img src="icons/landmark.svg" alt="landmark" width="40px">
+                        </div>
+                        
+                        <div class="magnet-title">Chateau Frontenac</div>
+                    </div>
+                    
+                    <main>
                     </main>
                 </div>
             </div>
@@ -231,8 +231,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     
                     <main>
-                        08/2021 <br><br>
-
+                        08/08/2021 <br><br>
+                        Went to La Citadelle de Québec and continued to explore the city.
                     </main>
                 </div>
             </div>
@@ -252,8 +252,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     
                     <main>
-                        08/2021 <br><br>
-
                     </main>
                 </div>
             </div>
@@ -285,8 +283,11 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     
                     <main>
-                        08/2021 <br><br>
-
+                        08/09/2021 <br><br>
+                        After driving from Québec City to Ottawa, we walked around Byward Market, Major Hill’s Park, and Parliament.
+                        <br><br>
+                        08/10/2021 <br><br>
+                        Shopping at Rideau Centre.
                     </main>
                 </div>
             </div>
@@ -306,8 +307,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     
                     <main>
-                        08/2021 <br><br>
-
+                        08/11/2021 <br><br>
+                        Commissioners Park and pedal boats on Dow’s Lake. Walked around Major Hill’s Park and the National Gallery of Canada grounds.
                     </main>
                 </div>
             </div>
@@ -315,6 +316,19 @@ document.addEventListener("DOMContentLoaded", () => {
 <br>
 <br>
 
-<div class="footer"></div>
+<!-- back to top "button" -->
+<div class="clickable2">
+    <a href="year_2021.html#top">Back to Top</a>
+</div>
+
+<!-- Footer - links to About page -->
+<div class="footer">
+    <br>
+    <br>
+    &#9733; Want to learn more about this website? &#9733;
+    <div class="clickable2"> 
+        <a href="about.html">Click Here!</a>
+    </div>
+</div>
 
 </body>
