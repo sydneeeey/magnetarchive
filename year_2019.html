@@ -19,6 +19,8 @@
 <script>
 document.addEventListener("DOMContentLoaded", () => {
 
+// hover dropdown works on mobile
+
     const dropdown = document.querySelector('.dropdown');
     const toggle = document.querySelector('.dropdown-toggle');
 
@@ -32,10 +34,10 @@ document.addEventListener("DOMContentLoaded", () => {
 <div class="header">
     <nav>
         <a href="index.html" class="logo-link">
-            <h1><img src="icons/lightning.svg" height="20px"> Magnet Archive</h1>
+            <h1><img src="icons/lightning.svg" height="20px"> Magnet Archive</h1> <!-- site header and logo, links to home page -->
         </a>
         <ul>
-            <li class="dropdown">
+            <li class="dropdown"> <!-- year pages contained within a dropdown menu -->
                 <button class="dropdown-toggle">Year</button>
                 <ul class="dropdown-menu">
                     <li><a href="year_2018.html">2018</a></li>
@@ -55,14 +57,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 <br><br><br>
 
-<!-- top section of each page -->
-            <div class="year-container">
-                <div class="year">2019</div>
-            </div>
+<!-- Title - each page begins with the same header and subhead style -->
+<div class="year-container">
+    <div class="year">2019</div>
+</div>
 
-            <div class="countries-container">
-            <div class="countries">U.S.A. & Canada</div>
-            </div>
+<div class="countries-container">
+    <div class="countries">U.S.A. & Canada</div>
+</div>
 <!------------------------------>
 
 <!-- begin magnet section, repeatable format for each year page -->
@@ -93,8 +95,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     
                     <main>
-                        03/2019 <br><br>
-
+                        03/22/2019 - 03/27/2019 <br><br>
+                        We went on a trip to San Diego for my Dad's work convention. 
                     </main>
                 </div>
             </div>
@@ -114,8 +116,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     
                     <main>
-                        03/2019 <br><br>
-
+                        03/22/2019 - 03/27/2019 <br><br>
+                        Once we arrived, we went on a walk around the downtown and Gaslamp area. We visited the San Diego Zoo, Mission Beach, and the USS Midway. The convention had an event at Petco Park, where the San Diego Padres play, so I got to explore the stadium when it was empty.
                     </main>
                 </div>
             </div>
@@ -146,7 +148,17 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
 
                     <main>
-                        07/2019 <br><br>
+                        07/11/2019 <br><br>
+                        We flew from Toronto to Kona with a layover in between. Once we landed, we got our rental car and groceries at Costco, then went to our accommodations and had dinner on Ali’i Drive with a sunset view.
+                        <br><br>
+                        07/12/2022 <br><br>
+                        Shopping day on Ali’i Drive, then a walk around the beach where we were staying, then had dinner at the Kona Brewing Co.
+                        <br><br>
+                        07/13/2022 <br><br>
+                        We drove to Pu'uhonua O Honaunau National Historical Park and The Painted Church.
+                        <br><br>
+                        07/14/2022 <br><br>
+                        Swimming in the morning, then we shopped at the Waikoloa Beach Resort area, about an hour away from where we were staying. We stayed at this resort on a previous visit and wanted to see it again on this trip.
 
                     </main>
                 </div>
@@ -166,8 +178,23 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
 
                     <main>
-                        07/2019 <br><br>
-
+                        07/15/2019 <br><br>
+                        Day trip to Hawaiʻi Volcanoes National Park, where we saw the Hōlei Sea Arch. Next, we went to Punalu'u Bake Shop, the Southernmost Bakery in the USA.
+                        <br><br>
+                        07/16/2019 <br><br>
+                        Rest day.
+                        <br><br>
+                        07/17/2019 <br><br>
+                        Drove to the town of Kapaʻau, where we saw the original King Kamehameha I Statue, then walked down from the Pololū Valley Lookout to Pololū black sand beach.
+                        <br><br>
+                        07/18/2019 - 07/19/2019 <br><br>
+                        Beach days.
+                        <br><br>
+                        07/20/2019  <br><br>
+                        First surf lessons at Kaloko-Honokōhau National Historical Park.
+                        <br><br>
+                        07/21/2019  <br><br>
+                        Flight from Kona to San Francisco.
                     </main>
                 </div>
             </div>
@@ -184,29 +211,9 @@ document.addEventListener("DOMContentLoaded", () => {
             <hr>
             </section>
 
-            <div class="magnet-container" id="SanFranciscoLicensePlate">
+            <div class="magnet-container" id="FishermansWharf">
                 <div class="image">
-                    <img src="resources/sanFranciscoLP.png" alt="san francisco license" height="215px">
-                </div>
-                <div class="info">
-                    <div class="title-row">
-                        <div class="icon">
-                            <img src="icons/license.svg" alt="license" width="80px">
-                        </div>
-                        
-                        <div class="magnet-title">San Francisco License Plate</div>
-                    </div>
-
-                    <main>
-                        07/2019 <br><br>
-
-                    </main>
-                </div>
-            </div>
-
-            <div class="magnet-container" id="Alcatraz">
-                <div class="image">
-                    <img src="resources/alcatraz.png" alt="alcatraz" height="310px">
+                    <img src="resources/fishermansWharf.png" alt="fisherman's wharf" height="300px">
                 </div>
                 <div class="info">
                     <div class="title-row">
@@ -214,32 +221,12 @@ document.addEventListener("DOMContentLoaded", () => {
                             <img src="icons/landmark.svg" alt="landmark" width="40px">
                         </div>
                         
-                        <div class="magnet-title">Alcatraz</div>
+                        <div class="magnet-title">Fisherman's Wharf</div>
                     </div>
 
                     <main>
-                        07/2019 <br><br>
-
-                    </main>
-                </div>
-            </div>
-
-            <div class="magnet-container" id="GoldenGateBridge2">
-                <div class="image">
-                    <img src="resources/goldenGate1.png" alt="golden gate 1" height="325px">
-                </div>
-                <div class="info">
-                    <div class="title-row">
-                        <div class="icon">
-                            <img src="icons/landmark.svg" alt="landmark" width="40px">
-                        </div>
-                        
-                        <div class="magnet-title">Golden Gate Bridge</div>
-                    </div>
-
-                    <main>
-                        07/2019 <br><br>
-
+                        07/22/2019 <br><br>
+                        After arriving in San Francisco, we took the streetcar from Chinatown to Fisherman's Wharf Area, where we spent the rest of the day walking and shopping, specifically in all the great magnet stores, which is where I bought a lot of these. We saw the seals and Alcatraz Island from afar.
                     </main>
                 </div>
             </div>
@@ -258,48 +245,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
 
                     <main>
-                        07/2019 <br><br>
-
-                    </main>
-                </div>
-            </div>
-
-            <div class="magnet-container" id="FishermansWharf">
-                <div class="image">
-                    <img src="resources/fishermansWharf.png" alt="fisherman's wharf" height="300px">
-                </div>
-                <div class="info">
-                    <div class="title-row">
-                        <div class="icon">
-                            <img src="icons/landmark.svg" alt="landmark" width="40px">
-                        </div>
-                        
-                        <div class="magnet-title">Fisherman's Wharf</div>
-                    </div>
-
-                    <main>
-                        07/2019 <br><br>
-
-                    </main>
-                </div>
-            </div>
-
-            <div class="magnet-container" id="GoldenGateBridge1">
-                <div class="image">
-                    <img src="resources/goldengatebridge.png" alt="" height="140px">
-                </div>
-                <div class="info">
-                    <div class="title-row">
-                        <div class="icon">
-                            <img src="icons/landmark.svg" alt="landmark" width="40px">
-                        </div>
-                        
-                        <div class="magnet-title">Golden Gate Bridge</div>
-                    </div>
-
-                    <main>
-                        07/2019 <br><br>
-
                     </main>
                 </div>
             </div>
@@ -318,8 +263,86 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
 
                     <main>
-                        07/2019 <br><br>
+                    </main>
+                </div>
+            </div>
 
+            <div class="magnet-container" id="SanFranciscoLicensePlate">
+                <div class="image">
+                    <img src="resources/sanFranciscoLP.png" alt="san francisco license" height="215px">
+                </div>
+                <div class="info">
+                    <div class="title-row">
+                        <div class="icon">
+                            <img src="icons/license.svg" alt="license" width="80px">
+                        </div>
+                        
+                        <div class="magnet-title">San Francisco License Plate</div>
+                    </div>
+
+                    <main>
+                        07/23/2019 <br><br>
+                        Breakfast at Loris Diner, a 50s-style diner opened in 1986. We had a guide to take us around the city. We got to see the Ant-Man house, The Princess Diaries high school, the Mrs. Doubtfire house, the Palace of Fine Arts from the 1915 Panama-Pacific International Exposition, and the Lucasfilm Campus at the Letterman Digital Arts Center, which had a bunch of Star Wars memorabilia.
+                    </main>
+                </div>
+            </div>
+
+            <div class="magnet-container" id="GoldenGateBridge2">
+                <div class="image">
+                    <img src="resources/goldenGate1.png" alt="golden gate 1" height="325px">
+                </div>
+                <div class="info">
+                    <div class="title-row">
+                        <div class="icon">
+                            <img src="icons/landmark.svg" alt="landmark" width="40px">
+                        </div>
+                        
+                        <div class="magnet-title">Golden Gate Bridge</div>
+                    </div>
+
+                    <main>
+                        07/23/2019 <br><br>
+                        We stopped on Marine Dr, right along the water, to see the Golden Gate Bridge. We drove on the bridge to go to the Muir Woods National Monument.
+                    </main>
+                </div>
+            </div>
+
+            <div class="magnet-container" id="GoldenGateBridge1">
+                <div class="image">
+                    <img src="resources/goldengatebridge.png" alt="" height="140px">
+                </div>
+                <div class="info">
+                    <div class="title-row">
+                        <div class="icon">
+                            <img src="icons/landmark.svg" alt="landmark" width="40px">
+                        </div>
+                        
+                        <div class="magnet-title">Golden Gate Bridge</div>
+                    </div>
+
+                    <main>
+                        07/23/2019 <br><br>
+                        We drove back across the bridge to Alamo Square and The Painted Ladies, then to the Twin Peaks lookout. That night, we went to a San Francisco Giants game at Oracle Park.
+                    </main>
+                </div>
+            </div>
+
+            <div class="magnet-container" id="Alcatraz">
+                <div class="image">
+                    <img src="resources/alcatraz.png" alt="alcatraz" height="310px">
+                </div>
+                <div class="info">
+                    <div class="title-row">
+                        <div class="icon">
+                            <img src="icons/landmark.svg" alt="landmark" width="40px">
+                        </div>
+                        
+                        <div class="magnet-title">Alcatraz</div>
+                    </div>
+
+                    <main>
+                        07/24/2019 <br><br>
+                        Shopping at the San Francisco Centre mall. In the evening, we took the boat to Alcatraz Island and took a tour of the island and the prison.
                     </main>
                 </div>
             </div>
@@ -350,8 +373,17 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
 
                     <main>
-                        08/2019 <br><br>
-
+                        08/10/2019 <br><br>
+                        Tors Cove, Ferryland Lighthouse, Cape Spear (Most Easterly Point in Canada).
+                        <br><br>
+                        08/11/2019 <br><br>
+                        Signal Hill National Historic Site, Quidi Vidi.
+                        <br><br>
+                        08/12/2019 <br><br>
+                        Signal Hill National Historic Site.
+                        <br><br>
+                        08/14/2019 <br><br>
+                        Boat ride, Terry Fox Mile Zero Memorial Site.
                     </main>
                 </div>
             </div>
@@ -359,6 +391,19 @@ document.addEventListener("DOMContentLoaded", () => {
 <br>
 <br>
 
-<div class="footer"></div>
+<!-- back to top "button" -->
+<div class="clickable2">
+    <a href="year_2019.html#top">Back to Top</a>
+</div>
+
+<!-- Footer - links to About page -->
+<div class="footer">
+    <br>
+    <br>
+    &#9733; Want to learn more about this website? &#9733;
+    <div class="clickable2"> 
+        <a href="about.html">Click Here!</a>
+    </div>
+</div>
 
 </body>
