@@ -12,13 +12,18 @@ body{
     transparent 28px,
     transparent 118px
     );
+    cursor: url(resources/auto.svg), auto; /* custom cursor */
+}
+
+a:hover{
+    cursor: url(resources/pointer.svg), auto; /* custom hover cursor */
 }
 
 /* ---------------------------------------------------------- */
 /* Header */
 
+/* header background and sizing */
 .header{
-    /* width: 100%; */
     height: 5rem;
     padding: 0% 5%;
     background: #3E3E3E;
@@ -26,6 +31,7 @@ body{
     align-items: center;
 }
 
+/* header title link - removing text decoration */
 .logo-link {
     text-decoration: none;
 }
@@ -68,6 +74,7 @@ nav ul li a{
     font-size: 0.75rem;
 }
 
+/* dropdown */
 .dropdown {
     position: relative;
 }
@@ -108,17 +115,17 @@ nav ul li a{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 0.75rem;
-    cursor: pointer;
+    cursor: url(resources/pointer.svg), auto;
 }
 
 /* header responds to screen width, text size reduces */
 @media (max-width: 1000px){
     .header{
-    height: 7rem;
-    padding: 0% 5%;
-    background: #3E3E3E;
-    display: flex;
-    align-items: center;
+        height: 7rem;
+        padding: 0% 5%;
+        background: #3E3E3E;
+        display: flex;
+        align-items: center;
     }   
     h1{
         font-size: 0rem;
@@ -133,6 +140,7 @@ nav ul li a{
 
 /* ---------------------------------------------------------- */
 /* Year/Title Section */
+    /* each page begins with the same header and subhead style */
 
 .year-container{
     display: flex;
@@ -140,7 +148,7 @@ nav ul li a{
     justify-content: center;
 }
 
-/* year text */
+/* defines background colour, sizing, font */
 .year{
     background-color: #3E3E3E;
     padding: 1.2rem;
@@ -157,7 +165,7 @@ nav ul li a{
     letter-spacing: -0.2rem;
 }
 
-/* wide titles following year format */
+/* wide titles*/
 .year2{
     background-color: #3E3E3E;
     padding: 1.2rem;
@@ -197,7 +205,7 @@ nav ul li a{
     text-align: center;
 }
 
-/* subtitle following country format */
+/* subtitle - using countries format */
 .countries2{
     /* background-color: aquamarine; */
     padding: 0rem;
@@ -214,7 +222,17 @@ nav ul li a{
     text-align: center;
 }
 
+/* ---------------------------------------------------------- */
+/* Destination */
 
+/* line formatting - above and below destination */
+hr{
+    border:none;
+    height: 1.5px;
+    background-color: #3E3E3E;
+}
+
+/* destination header - split into two sections (40/60% of screen) */
 .destination-container{
     display: grid;
     grid-gap: 10px;
@@ -223,22 +241,11 @@ nav ul li a{
     /40% 60%;
 }
 
-/* line formatting, above and below destination */
-hr{
-    border:none;
-    height: 1.5px;
-    background-color: #3E3E3E;
-}
-
-/* ---------------------------------------------------------- */
-/* Destination */
-
+/* "DESTINATION" title format */
 .destination {
-    /* background-color: aqua; */
     grid-area: destination;
 
     text-align: center;
-
     padding: 0rem;
     border: 0rem;
     margin: 1rem;
@@ -248,29 +255,10 @@ hr{
     font-weight: 400;
     font-size: 1.5rem;
     text-transform: uppercase;
-
-}
-
-/* sections for about page, following destination format */
-.about-destination {
-    text-align: center;
-
-    padding: 0rem;
-    border: 0rem;
-    margin: 2rem;
-
-
-    color: #3E3E3E;
-    font-family: 'Roboto Condensed';
-    font-weight: 400;
-    font-size: 1.75rem;
-    text-transform: uppercase;
-
 }
 
 /* general place format */
 .place{
-    /* background-color: aqua; */
     grid-area: place;
 
     padding: 0rem;
@@ -289,21 +277,51 @@ hr{
 /* width changes based on screen size */
 @media (max-width: 1000px){
     .destination{
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
     .place{
         width: 90%;
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
     .year2{
         width: 80%;
-        height: 4rem;
-        font-size: 3rem;
+        height: 4.5rem;
+        font-size: 4rem;
+    }
+}
+@media (max-width: 600px){
+    .destination{
+        font-size: 1rem;
+    }
+    .place{
+        font-size: 1rem;
+    }
+    .year2{
+        height: 3.75rem;
+        font-size: 3.25rem;
+    }
+    .countries{  
+        font-size: 1.25rem;
+    }
+}
+@media (max-width: 400px){
+    .destination{
+        font-size: 0.8rem;
+    }
+    .place{
+        font-size: 0.8rem;
+    }
+    .year2{
+        height: 3.25rem;
+        font-size: 2.75rem;
     }
 }
 
-/* background formatting for each country, within the .place section */
-.america-place{
+/* background formatting for each country - assigned colours, situated within the .place */
+    /* place - original format, for destination section */
+    /* place2 - catalogue format */
+
+    .america-place{
     background-color: #4C6473;
     padding: 0.5rem;
 }
@@ -313,7 +331,6 @@ hr{
     color: #F5EFE9;
     font-weight: 300;
     padding: 0.5rem;
-    /* text-indent: 1rem; */
 }
 
 .aruba-place{
@@ -561,26 +578,32 @@ hr{
 
 /* section with image, icon, title and description */
 .magnet-container{
+    max-width: 100%;
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 40% 50%; /* leaves 10% gap on right side, better text formatting */
     padding: 1rem;
-    orphans: 3;
 }
 
+/* image is centered within column 1, minimal drop shadow */
 .image {
     grid-column: 1;
     margin: 0.5rem;
-    filter: drop-shadow(0 0 0.75rem #92887d); /* added a slight shadow under the images, looked too "fake" before */
-    text-align: center; /* centered in the image grid section */
+    filter: drop-shadow(0 0 0.75rem #92887d); 
+    text-align: center; 
 }
 
-/* wide format images (e.g. colour graphic on about page */
+/* wide format images (e.g. colour graphic on About page */
 .image2 {
     grid-column: 1;
     margin: 0.5rem;
     margin-left: 4.5rem;
-    text-align: center; /* centered in the image grid section */
+    text-align: center;
+}
+
+/* image on 404 page */
+.error-image {
+    text-align: center; 
 }
 
 /* holds icon, magnet title and body text */
@@ -589,14 +612,21 @@ hr{
     display: flex;
     flex-direction: column;
     justify-content: start;
-    /* align-items: center;
-    gap: 1rem; */
 }
 
 .info .title-row{
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+
+.info .title-row .magnet-title {
+    color: #3E3E3E;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 1.75rem;
+    text-indent: 1rem;
+    line-height: 4rem;
 }
 
 .info .title-row .icon {
@@ -606,7 +636,6 @@ hr{
     height: 4rem;
     margin: 0.5rem;
     filter: drop-shadow(0 0 2rem #dfd5ca);
-    /* align-content: center; */
 }
 
 /* icons on home page */
@@ -616,20 +645,7 @@ hr{
     text-align: center;
 }
 
-.info .title-row .magnet-title {
-    /* grid-area: title; */
-
-    color: #3E3E3E;
-    font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 1.75rem;
-    text-indent: 1rem;
-    line-height: 4rem;
-}
-
 .info main {
-    /* grid-area:main; */
-
     padding: 1rem;
     border: 0rem;
     margin-top: 0.5rem;
@@ -640,8 +656,26 @@ hr{
     font-size: 1.10rem;
 }
 
+.info main ul li{
+    font-size: 1.10rem;
+}
+
 /* ---------------------------------------------------------- */
 /* About Page */
+
+/* sections for about page, following destination format */
+.about-destination {
+    text-align: center;
+    padding: 0rem;
+    border: 0rem;
+    margin: 2rem;
+
+    color: #3E3E3E;
+    font-family: 'Roboto Condensed';
+    font-weight: 400;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+}
 
 .about-info{
     grid-column: 2;
@@ -689,43 +723,7 @@ hr{
     font-size: 1.10rem;
 
 }
-
-/* layout changes based on screen width, images move above info section */
-@media (max-width: 1000px) {
-    .magnet-container {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-        padding: 1rem;
-    }
-    .title-row{
-        align-items: center;
-        justify-content: center;
-    }
-    .image{
-        scale: 80%;
-    }
-    .image2{
-        scale: 50%;
-    }
-    .info .title-row .icon{
-        scale: 80%;
-    }
-}
-
 /* ---------------------------------------------------------- */
-/* Footer */
-
-.footer{
-    height: 10rem;
-    /* padding: 0% 5%; */
-    background: #3E3E3E;
-    /* display: flex;
-    align-items: center; */
-}
-
-/* ---------------------------------------------------------- */
-/* General Text Formatting */
 
 h2{
     color: #3E3E3E;
@@ -747,6 +745,212 @@ main{
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 1.10rem;
+}
+
+/* text format, border around instructions */
+.map-instructions{
+    background-color: #F5EFE9;
+    border: 1px solid #3E3E3E;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    margin-left: 10rem;
+    width: 35rem;
+
+    color: #3E3E3E;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 1.10rem;
+}
+
+.error-main{
+    text-align: center;
+    color: #3E3E3E;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 1.10rem;
+}
+
+/* ---------------------------------------------------------- */
+/* layout changes based on screen width, images move above info section */
+@media (max-width: 1000px) {
+    .magnet-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+    .title-row{
+        align-items: center;
+        justify-content: center;
+    }
+    .info main {
+        font-size: 0.9rem;
+        margin-right: 1rem;
+    }
+    .info main ul li{
+        font-size: 0.9rem;
+    }
+    .image{
+        transform: scale(80%);
+    }
+    .image2{
+        transform: scale(80%);
+        margin-left: 1rem;
+    }
+    .error-image {
+        margin-left: -7rem;
+        transform: scale(50%);
+    }
+    .info .title-row .icon{
+        scale: 80%;
+    }
+    .about-info .about-title-row {
+        margin-left: 2rem;
+    }
+    .about-info .about-title-row .icon{
+        height: 0.5rem;
+    }
+    .about-info main{
+        margin-top: 0.5rem;
+        margin-left: 4rem;
+        margin-right: 2rem;
+        font-size: 0.9rem
+    }
+    main {
+        margin-left: 4rem;
+        font-size: 0.9rem
+    }
+    .map-instructions{
+        padding: 0.75rem;
+        margin-left: 4rem;
+        margin-bottom: 2rem;
+        width: 28rem;
+
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 600px) {
+    .magnet-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+    .title-row{
+        align-items: center;
+        justify-content: center;
+    }
+    .info main {
+        font-size: 0.8rem;
+        margin-right: 1rem;
+    }
+    .info .title-row .magnet-title {
+        font-size: 1.5rem;
+    }
+    .image{
+        transform: scale(70%);
+        margin-left: -2rem;
+    }
+    .image2{
+        transform: scale(80%);
+        margin-left: 0.25rem;
+    }
+    .info .title-row .icon{
+        scale: 80%;
+    }
+    .about-info .about-title-row {
+        margin-left: 2rem;
+        
+    }
+    .about-info main{
+        margin-top: 0.5rem;
+        margin-left: 4rem;
+        margin-right: 2rem;
+        font-size: 0.8rem
+    }
+    main {
+        margin-left: 4rem;
+        font-size: 1rem
+    }
+    .map-instructions{
+        padding: 0.75rem;
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+        width: 22rem;
+
+        font-size: 0.75rem;
+    }
+}
+@media (max-width: 400px) {
+    .info main {
+        font-size: 1rem;
+        margin-right: 1rem;
+    }
+    .info .title-row .magnet-title {
+        font-size: 1.25rem;
+    }
+    .image{
+        transform: scale(60%);
+        margin-left: -2rem;
+    }
+    .image2{
+        transform: scale(70%);
+        margin-left: 0.25rem;
+    }
+    .info .title-row .icon{
+        scale: 80%;
+    }
+
+    .about-info .about-title-row {
+        margin-left: 2rem;
+    }
+
+    .about-info .about-title-row .icon{
+        transform: scale(30%);
+        margin-left: 2rem;
+    }
+    .about-info main{
+        margin-top: 0.5rem;
+        margin-left: 0rem;
+        margin-right: 2rem;
+        font-size: 0.8rem
+    }
+    main {
+        margin-left: 1rem;
+        font-size:0.8rem
+    }
+    .map-instructions{
+        padding: 0.75rem;
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+        width: 15rem;
+
+        font-size: 0.5rem;
+    }
+    .info main ul li{
+        font-size: 1rem;
+    }
+}
+
+/* ---------------------------------------------------------- */
+/* Footer */
+
+.footer{
+    height: 10rem;
+    background: #3E3E3E;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #F5EFE9;
+}
+
+.footer .clickable2 a{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #F5EFE9;
 }
 
 /* ---------------------------------------------------------- */
@@ -810,18 +1014,18 @@ table{
 }
 /* table header */
 thead th {
-  position: sticky;
-  top: 0;
-  background: #F5EFE9;
-  color: #3E3E3E;
-  font-weight: 400;
-  padding: 1rem;
-  text-transform: uppercase;
-  font-size: 1rem;
-  cursor: pointer;
-  user-select: none;
-  border-bottom: 1.5px solid #3E3E3E;
-  border-top: 1.5px solid #3E3E3E;
+    position: sticky;
+    top: 0;
+    background: #F5EFE9;
+    color: #3E3E3E;
+    font-weight: 400;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    cursor: url(resources/pointer.svg), auto; /* custom hover cursor */
+    user-select: none;
+    border-bottom: 1.5px solid #3E3E3E;
+    border-top: 1.5px solid #3E3E3E;
 }
 
 /* header changes colour on hover */
@@ -842,20 +1046,27 @@ tbody td{
 }
 
 .clickable a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  color: #3E3E3E;
-  text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #3E3E3E;
+    text-decoration: none;
+}
 
+.clickable2 a {
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #3E3E3E;
+    text-decoration: none;
+    text-align: center;
 }
 
 /* header and body text scaling */
 th, td {
     word-wrap: break-word;
     overflow-wrap: break-word;
-    /* cursor: pointer;
-    user-select: none; */
 }
 
 /* link colour */
@@ -875,8 +1086,7 @@ tbody td a {
 
 }
 
-/* table scaling for small screen sizes, 
-font and icon sizes reduce to fit screen */
+/* table scaling for small screen sizes, font and icon sizes reduce to fit screen */
 @media (max-width:600px){
     tbody td{
         padding: 0.5rem;
@@ -898,8 +1108,6 @@ font and icon sizes reduce to fit screen */
 /* -------------------------------------------------------------------------- */
 /* PROCESS */
 /* OLD CODE */
-
-
 
 /* header box and background format*/
 /* .header{
@@ -1005,7 +1213,7 @@ font and icon sizes reduce to fit screen */
         justify-content: flex-start;
     }
 } */
- 
+
 /* IMAGE -  I wanted image scale to change based on screen size, 
 later decided to have content stack instead of changing only image scale */
 
