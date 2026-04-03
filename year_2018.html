@@ -19,6 +19,8 @@
 <script>
 document.addEventListener("DOMContentLoaded", () => {
 
+// hover dropdown works on mobile
+
     const dropdown = document.querySelector('.dropdown');
     const toggle = document.querySelector('.dropdown-toggle');
 
@@ -32,10 +34,10 @@ document.addEventListener("DOMContentLoaded", () => {
 <div class="header">
     <nav>
         <a href="index.html" class="logo-link">
-            <h1><img src="icons/lightning.svg" height="20px"> Magnet Archive</h1>
+            <h1><img src="icons/lightning.svg" height="20px"> Magnet Archive</h1> <!-- site header and logo, links to home page -->
         </a>
         <ul>
-            <li class="dropdown">
+            <li class="dropdown"> <!-- year pages contained within a dropdown menu -->
                 <button class="dropdown-toggle">Year</button>
                 <ul class="dropdown-menu">
                     <li><a href="year_2018.html">2018</a></li>
@@ -55,14 +57,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 <br><br><br>
 
-<!-- top section of each page -->
-            <div class="year-container">
-                <div class="year">2018</div>
-            </div>
+<!-- Title - each page begins with the same header and subhead style -->
+<div class="year-container">
+    <div class="year">2018</div>
+</div>
 
-            <div class="countries-container">
-            <div class="countries">U.S.A., Aruba & Curacao</div>
-            </div>
+<div class="countries-container">
+    <div class="countries">U.S.A., Aruba & Curacao</div>
+</div>
 <!------------------------------>
 
 <!-- begin magnet section, repeatable format for each year page -->
@@ -93,8 +95,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     
                     <main>
-                        04/2018 <br><br>
-
+                        04/02/2018 - 04/08/2018<br><br>
+                        This trip was a convention for my dad’s work. We had a few free days before it started, so we went to Walt Disney World for one of those days. I didn’t buy any magnets from there, most were purchased from a souvenir store on U.S. Highway 192/Irlo Bronson Hwy.
                     </main>
                 </div>
             </div>
@@ -113,8 +115,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
 
                     <main>
-                        04/2018 <br><br>
-
                     </main>
                 </div>
             </div>
@@ -133,8 +133,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
 
                     <main>
-                        04/2018 <br><br>
-
                     </main>
                 </div>
             </div>
@@ -153,8 +151,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
 
                     <main>
-                        04/2018 <br><br>
-
                     </main>
                 </div>
             </div>
@@ -173,7 +169,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
 
                     <main>
-                        04/2018 <br><br>
+                        04/02/2018 - 04/08/2018<br><br>
+                        The convention had a trip to Disney Springs, specifically to the Spiltsville bowling alley.
 
                     </main>
                 </div>
@@ -191,26 +188,6 @@ document.addEventListener("DOMContentLoaded", () => {
             <hr>
             </section>
 
-            <div class="magnet-container" id="NYPDLicensePlate">
-                <div class="image">
-                    <img src="resources/nypdLP.png" alt="nypd license" height="150px">
-                </div>
-                <div class="info">
-                    <div class="title-row">
-                        <div class="icon">
-                            <img src="icons/license.svg" alt="license" width="80px">
-                        </div>
-                        
-                        <div class="magnet-title">NYPD License Plate</div>
-                    </div>
-
-                    <main>
-                        06/2018 <br><br>
-
-                    </main>
-                </div>
-            </div>
-
             <div class="magnet-container" id="NewYorkLicensePlate">
                 <div class="image">
                     <img src="resources/nyLP.png" alt="new york license" height="150px">
@@ -225,8 +202,28 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
 
                     <main>
-                        06/2018 <br><br>
+                        06/14/2018 - 06/18/2018<br><br>
+                        This was my first trip to New York. We went because my mom’s choir was part of a larger group performing at Carnegie Hall. 
+                    </main>
+                </div>
+            </div>
 
+            <div class="magnet-container" id="NYPDLicensePlate">
+                <div class="image">
+                    <img src="resources/nypdLP.png" alt="nypd license" height="150px">
+                </div>
+                <div class="info">
+                    <div class="title-row">
+                        <div class="icon">
+                            <img src="icons/license.svg" alt="license" width="80px">
+                        </div>
+                        
+                        <div class="magnet-title">NYPD License Plate</div>
+                    </div>
+
+                    <main>
+                        06/14/2018 - 06/18/2018<br><br>
+                        I got to see Central Park, Ripley’s Believe It or Not museum, Madame Tussauds museum, Top of the Rock, an observation deck at the top of Rockefeller Centre, and went on a Hop on Hop Off bus.
                     </main>
                 </div>
             </div>
@@ -245,8 +242,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
 
                     <main>
-                        06/2018 <br><br>
-
+                        06/14/2018 - 06/18/2018<br><br>
+                        Took the boat to the Statue of Liberty and Ellis Island.
                     </main>
                 </div>
             </div>
@@ -265,8 +262,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
 
                     <main>
-                        06/2018 <br><br>
-
+                        06/14/2018 - 06/18/2018<br><br>
+                        Went to the M&M store in Times Square.
                     </main>
                 </div>
             </div>
@@ -285,8 +282,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
 
                     <main>
-                        06/2018 <br><br>
-
                     </main>
                 </div>
             </div>
@@ -317,11 +312,43 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
 
                     <main>
-                        07/2018 <br><br>
-
+                        07/13/2018 - 07/23/2018<br><br>
+                        I went on a Carnival cruise, which went to Grand Turk (07/16), La Romana (07/17), Curacao, Aruba, then back to Miami (07/22, 23).
                     </main>
                 </div>
             </div>
+
+            <section>
+            <hr id="curacao">
+            <div class="destination-container">
+                <div class="destination">destination</div>
+
+                <div class="place">
+                    <div class="aruba-place">Curacao - Curacao</div>
+                </div>
+            </div>
+            <hr>
+            </section>
+
+            <div class="magnet-container" id="Curacao">
+                <div class="image">
+                    <img src="resources/curacao.png" alt="curacao" height="185px">
+                </div>
+                <div class="info">
+                    <div class="title-row">
+                        <div class="icon">
+                            <img src="icons/word.svg" alt="word" width="60px">
+                        </div>
+                        
+                        <div class="magnet-title">Curacao</div>
+                    </div>
+
+                    <main>
+                        07/18/2018 <br><br>
+                        Wandered around the Town Centre.
+                    </main>
+                </div>
+            </div> 
 
             <section>
             <hr id="aruba">
@@ -349,43 +376,11 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
 
                     <main>
-                        07/2018 <br><br>
-
+                        07/19/2018 <br><br>
+                        Went snorkelling.
                     </main>
                 </div>
             </div>    
-
-            <section>
-            <hr id="curacao">
-            <div class="destination-container">
-                <div class="destination">destination</div>
-
-                <div class="place">
-                    <div class="aruba-place">Curaçao - Curaçao</div>
-                </div>
-            </div>
-            <hr>
-            </section>
-
-            <div class="magnet-container" id="Curaçao">
-                <div class="image">
-                    <img src="resources/curacao.png" alt="curacao" height="185px">
-                </div>
-                <div class="info">
-                    <div class="title-row">
-                        <div class="icon">
-                            <img src="icons/word.svg" alt="word" width="60px">
-                        </div>
-                        
-                        <div class="magnet-title">Curaçao</div>
-                    </div>
-
-                    <main>
-                        07/2018 <br><br>
-
-                    </main>
-                </div>
-            </div> 
 
             <section>
             <hr>
@@ -413,8 +408,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
 
                     <main>
-                        12/2018 <br><br>
-
+                        12/24/2018 - 01/02/2019<br><br>
+                        With my family and friends, we went back to Orlando for Christmas. We didn’t go to Disney, but I liked this magnet.
                     </main>
                 </div>
             </div> 
@@ -422,6 +417,19 @@ document.addEventListener("DOMContentLoaded", () => {
 <br>
 <br>
 
-<div class="footer"></div>
+<!-- back to top "button" -->
+<div class="clickable2">
+    <a href="year_2018.html#top">Back to Top</a>
+</div>
+
+<!-- Footer - links to About page -->
+<div class="footer">
+    <br>
+    <br>
+    &#9733; Want to learn more about this website? &#9733;
+    <div class="clickable2"> 
+        <a href="about.html">Click Here!</a>
+    </div>
+</div>
 
 </body>
