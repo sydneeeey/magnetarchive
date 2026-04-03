@@ -19,23 +19,23 @@
 <script>
 document.addEventListener("DOMContentLoaded", () => {
 
+// hover dropdown works on mobile
+
     const dropdown = document.querySelector('.dropdown');
     const toggle = document.querySelector('.dropdown-toggle');
 
     toggle.addEventListener('click', () => {
         dropdown.classList.toggle('open');
     });
-
 });
 </script>
-
 <div class="header">
     <nav>
         <a href="index.html" class="logo-link">
-            <h1><img src="icons/lightning.svg" height="20px"> Magnet Archive</h1>
+            <h1><img src="icons/lightning.svg" height="20px"> Magnet Archive</h1> <!-- site header and logo, links to home page -->
         </a>
         <ul>
-            <li class="dropdown">
+            <li class="dropdown"> <!-- year pages contained within a dropdown menu -->
                 <button class="dropdown-toggle">Year</button>
                 <ul class="dropdown-menu">
                     <li><a href="year_2018.html">2018</a></li>
@@ -55,18 +55,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
 <br><br><br>
 
-<!-- top section of each page -->
-            <div class="year-container">
-                <div class="year">About</div>
-            </div>
+<!-- Title - each page begins with the same header and subhead style -->
+<div class="year-container" id="top">
+    <div class="year">About</div>
+</div>
 
-            <div class="countries-container">
-            <div class="countries">Magnets, Me, Zines, <br>Design & Coding</div>
-            </div>
+<div class="countries-container">
+    <div class="countries">Magnets, Me, Zines, <br>Design & Coding</div>
+</div>
 <!------------------------------>
-<div class="about-section">
-            <section>
-            <hr>
+
+<section>
+    <div class="about-section">
+        <hr>
             <div class="destination-container">
                 <div class="destination">&#9733;</div> 
 
@@ -74,75 +75,75 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div class="unknown-place">The Project</div>
                 </div>
             </div>
-            <hr>
-            </section>
+        <hr>
+    </div>
+</section>
 
 <main>Welcome to the Magnet Archive!</main>
 <main>This collection began in 2018 and has been growing ever since. Through this website, you can explore magnets from my travels around the world.</main>
 
 <div class="magnet-container">
-                <div class="image">
-                    <img src="resources/germany.png" alt="germany" height="300px">
-                    <br>
-                    <br>
-                    <img src="resources/italy.png" alt="italy" height="300px">
-                    <br>
-                    <br>
-                    <img src="resources/japan.png" alt="japan" height="350px">
+    <div class="image">
+        <img src="resources/germany.png" alt="germany" height="300px">
+        <br>
+        <br>
+        <img src="resources/italy.png" alt="italy" height="300px">
+        <br>
+        <br>
+        <img src="resources/japan.png" alt="japan" height="350px">
 
-                </div>
+    </div>
 
-            <div class="info">
-                    <main>
-                        <b>Here are the places I've visited since 2018:</b>
-                        <ul>
-                            <li>Aruba</li>
-                            <li>Canada</li>
-                            <li>Curaçao</li>
-                            <li>Denmark</li>
-                            <li>Dominican Republic</li>
-                            <li>England</li>
-                            <li>Estonia</li>
-                            <li>Finland</li>
-                            <li>Germany</li>
-                            <li>Ireland</li>
-                            <li>Japan</li>
-                            <li>Monaco</li>
-                            <li>Northern Ireland</li>
-                            <li>Sweden</li>
-                            <li>United States of America</li>
-                        </ul>
-                        <br>
-                        <br>
-                        <b>Some magnets in the archive were gifts from friends and family:</b>
-                        <ul>
-                            <li>Australia</li>
-                            <li>Iceland</li>
-                            <li>Serbia</li>
-                        </ul>
-                        <br>
-                        <br>
-                        <b>A few gifted magnets come from countries I visited before 2018, back when I wasn't collecting magnets yet:</b>
-                        <ul>
-                            <li>France</li>
-                            <li>Italy</li>
-                            <li>Spain</li>
-                        </ul>
-                    </main>
-                </div>
+    <div class="info">
+        <main>
+            <b>Here are the places I've visited since 2018:</b>
+            <ul>
+                <li>Aruba</li>
+                <li>Canada</li>
+                <li>Curaçao</li>
+                <li>Denmark</li>
+                <li>Dominican Republic</li>
+                <li>England</li>
+                <li>Estonia</li>
+                <li>Finland</li>
+                <li>Germany</li>
+                <li>Ireland</li>
+                <li>Japan</li>
+                <li>Monaco</li>
+                <li>Northern Ireland</li>
+                <li>Sweden</li>
+                <li>United States of America</li>
+            </ul>
+            <br>
+            <br>
+            <b>Some magnets in the archive were gifts from friends and family:</b>
+            <ul>
+                <li>Australia</li>
+                <li>Iceland</li>
+                <li>Serbia</li>
+            </ul>
+            <br>
+            <br>
+            <b>A few gifted magnets come from countries I visited before 2018, back when I wasn't collecting magnets yet:</b>
+            <ul>
+                <li>France</li>
+                <li>Italy</li>
+                <li>Spain</li>
+            </ul>
+        </main>
+    </div>
 </div>
 
-            <section>
-            <hr>
-            <div class="destination-container">
-                <div class="destination">&#9733;</div> 
-
-                <div class="place">
-                    <div class="unknown-place">About Me</div>
-                </div>
-            </div>
-            <hr>
-            </section>
+<section>
+    <hr>
+    <div class="destination-container">
+        <div class="destination">&#9733;</div> 
+        <div class="place">
+            <div class="unknown-place">About Me</div>
+        </div>
+    </div>
+    <hr>
+</section>
 
 <div class="magnet-container">
     <div class="image">
@@ -150,52 +151,76 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
 
     <div class="info">
-            <main>
-                I've been travelling for as long as I can remember, and as a tactile person I've always loved collecting souvenirs. I have a lot of collections, from trips alone I've collected fans, miniature building replicas, keychains, and now my largest collection: magnets.
-                <br>
-                <br>
-                Before starting this project, I had a basic understanding of Javascript and HTML. Now I can say I'm pretty confident with HTML and CSS. We'll see what I decide to do with them next.
-            </main>
+        <main>
+            I've been travelling for as long as I can remember, and as a tactile person I've always loved collecting souvenirs. I have a lot of collections, from trips alone I've collected fans, miniature building replicas, keychains, and now my largest collection: magnets.
+            <br>
+            <br>
+            Before starting this project, I had a basic understanding of Javascript and HTML. Now I can say I'm pretty confident with HTML and CSS. We'll see what I decide to do with them next.
+        </main>
     </div>
 </div>
 
-            <section>
-            <hr>
-            <div class="destination-container">
-                <div class="destination">&#9733;</div> 
-
-                <div class="place">
-                    <div class="unknown-place">Risograph Zine</div>
-                </div>
-            </div>
-            <hr>
-            </section>
+<section>
+    <hr>
+    <div class="destination-container">
+        <div class="destination">&#9733;</div>
+        <div class="place">
+            <div class="unknown-place">Risograph Zine</div>
+        </div>
+    </div>
+    <hr>
+</section>
 
 <div class="magnet-container">
-    <div class="image">
-        <img src="resources/.png" alt="" height="250px">
+    <div class="image2">
+        <img src="resources/zine1.jpg" alt="" width="450px">
+        <br>
+        <br>
+        <img src="resources/zine2.jpg" alt="" width="450px">
+        <br>
+        <br>
+        <img src="resources/zine3.jpg" alt="" width="450px">
     </div>
 
     <div class="info">
-            <main>
-                Check out my zine, <i>Favourties from the Magnet Archive,</i> for a closer look at some of my favourite magnets from the collection.
-            </main>
+        <main>
+            Check out my zine, <i>Favourties from the Magnet Archive,</i> for a closer look at some of my favourite magnets from the collection.
+            <br>
+        </main>
+        <div class="image2">
+            <img src="resources/zine4.jpg" alt="" width="450px">
+            <br>
+            <br>
+            <img src="resources/zine5.jpg" alt="" width="450px">
+        </div>
     </div>
 </div>
 
-            <section>
-            <hr>
-            <div class="destination-container">
-                <div class="destination">&#9733;</div> 
+<section>
+    <hr>
+    <div class="destination-container">
+        <div class="destination">&#9733;</div> 
+        <div class="place">
+            <div class="unknown-place">Design Insights</div>
+        </div>
+    </div>
+    <hr>
+</section>
 
-                <div class="place">
-                    <div class="unknown-place">Design Insights</div>
-                </div>
-            </div>
-            <hr>
-            </section>
+<main><b>Favicons:</b></main>
 
-<main><b>Countries are also colour-coded, because why not?</b></main>
+<div class="magnet-container">
+    <div class="image2">
+        <img src="resources/favicons.svg" alt="favicons" height="500px">
+    </div>
+    <div class="info">
+        <main>
+            Each page has its own favicon.
+        </main>
+    </div>
+</div>
+
+<main><b>Countries are colour-coded, because why not?</b></main>
 
 <div class="magnet-container">
     <div class="image2">
@@ -203,12 +228,12 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
 
     <div class="info">
-            <main>
-                Each country has its own assigned colour. The palette actually comes from another motion graphic project I made, again, because why not.
-                <br>
-                <br>
-                Like what you see? Here are the colours and their HEX codes!
-            </main>
+        <main>
+            Each country has its own assigned colour. The palette actually comes from another motion graphic project I made, again, because why not.
+            <br>
+            <br>
+            Like what you see? Here are the colours and their HEX codes!
+        </main>
     </div>
 </div>
 
@@ -217,60 +242,58 @@ document.addEventListener("DOMContentLoaded", () => {
 <main><b>Each magnet category has a corresponding icon:</b></main>
 <br>
 <div class="about-info">
-        <div class="about-title-row">
-            <div class="icon">
-                <img src="icons/word.svg" alt="word" width=60px">
-            </div>
-                        
-            <div class="about-title">Word</div>
+    <div class="about-title-row">
+        <div class="icon">
+            <img src="icons/word.svg" alt="word" width=60px">
         </div>
-            <main>
-                Magnets that are simply a word, like the name of a country or city. 
-            </main>
+        
+        <div class="about-title">Word</div>
+    </div>
+    <main>
+        Magnets that are simply a word, like the name of a country or city. 
+    </main>
 </div>
 
 <div class="about-info">
-        <div class="about-title-row">
-            <div class="icon">
-                <img src="icons/landmark.svg" alt="landmark" width=40px">
-            </div>
-                        
-            <div class="about-title">Landmark</div>
+    <div class="about-title-row">
+        <div class="icon">
+            <img src="icons/landmark.svg" alt="landmark" width=40px">
         </div>
-            <main>
-                Magnets showing a specific building, monument, or piece of scenery from that place.
-            </main>
+        
+        <div class="about-title">Landmark</div>
+    </div>
+    <main>
+        Magnets showing a specific building, monument, or piece of scenery from that place.
+    </main>
 </div>
 
 <div class="about-info">
-        <div class="about-title-row">
-            <div class="icon">
-                <img src="icons/license.svg" alt="license" width=80px">
-            </div>
-                        
-            <div class="about-title">License Plate</div>
+    <div class="about-title-row">
+        <div class="icon">
+            <img src="icons/license.svg" alt="license" width=80px">
         </div>
-            <main>
-                Magnets designed like license plates, either real designs from that locations, or ones inspired by them.
-            </main>
+        
+        <div class="about-title">License Plate</div>
+    </div>
+    <main>
+        Magnets designed like license plates, either real designs from that locations, or ones inspired by them.
+    </main>
 </div>
 
 <div class="about-info">
-        <div class="about-title-row">
-            <div class="icon">
-                <img src="icons/item.svg" alt="item" width=60px">
-            </div>
-                        
-            <div class="about-title">Item</div>
+    <div class="about-title-row">
+        <div class="icon">
+            <img src="icons/item.svg" alt="item" width=60px">
         </div>
-            <main>
-                Basically any magnet that doesn't fit into the other categories.
-            </main>
+        <div class="about-title">Item</div>
+    </div>
+    <main>
+        Basically any magnet that doesn't fit into the other categories.
+    </main>
 </div>
 
 <br>
 <br>
-
 
 <main><b>Fonts used:</b></main>
     <main>
@@ -288,49 +311,55 @@ document.addEventListener("DOMContentLoaded", () => {
         Github
     </main>
 
-    <section>
-            <hr>
-            <div class="destination-container">
-                <div class="destination">&#9733;</div> 
-
-                <div class="place">
-                    <div class="unknown-place">Coding Tips</div>
-                </div>
-            </div>
-            <hr>
-            </section>
+<section>
+    <hr>
+    <div class="destination-container">
+        <div class="destination">&#9733;</div>
+        <div class="place">
+            <div class="unknown-place">Coding Tips</div>
+        </div>
+    </div>
+    <hr>
+</section>
 
 
 
 <main>
-        <b>See a website you like?</b>
-        <br>
-        Try using the browser's Inspect tool to look at how it's built. It can be a great way to learn and find inspiration for your own code.
-        <br>
-        <br>
-        <b>W3 Schools</b>
-        <br>
-        Quick explanations and examples for most coding topics. Great for when you're trying to figure something out, or troubleshoot a problem.
-        <br>
-        <br>
-        <b>Youtube</b>
-        <br>
-        Helpful for tutorials and seeing how other people approach coding problems
-        <br>
-        <br>
-        <b>Petra Pixel</b>
-        <br>
-        A really great resource for web design, with amazing beginner tutorials.
+    <b>See a website you like?</b>
+    <br>
+    Try using the browser's Inspect tool to look at how it's built. It can be a great way to learn and find inspiration for your own code.
+    <br>
+    <br>
+    <b>W3 Schools</b>
+    <br>
+    Quick explanations and examples for most coding topics. Great for when you're trying to figure something out, or troubleshoot a problem.
+    <br>
+    <br>
+    <b>Youtube</b>
+    <br>
+    Helpful for tutorials and seeing how other people approach coding problems
+    <br>
+    <br>
+    <b>Petra Pixel</b>
+    <br>
+    A really great resource for web design, with amazing beginner tutorials.
 </main>
     
 <br>
 <br>
 
+<!-- back to top "button" -->
+<div class="clickable2">
+    <a href="about.html#top">Back to Top</a>
+</div>
+
+<!-- Footer -->
 <div class="footer"></div>
 
 </body>
 
-
+<!-- ----------------------------------------------------------------------------------------------------- -->
+<!-- PROCESS: OLD CODE -->
 
 <!-- <main><b>Here are the places I've visited since 2018:</b></main>
 <div class="magnet-container">
