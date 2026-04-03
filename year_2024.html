@@ -19,6 +19,8 @@
 <script>
 document.addEventListener("DOMContentLoaded", () => {
 
+// hover dropdown works on mobile
+
     const dropdown = document.querySelector('.dropdown');
     const toggle = document.querySelector('.dropdown-toggle');
 
@@ -32,10 +34,10 @@ document.addEventListener("DOMContentLoaded", () => {
 <div class="header">
     <nav>
         <a href="index.html" class="logo-link">
-            <h1><img src="icons/lightning.svg" height="20px"> Magnet Archive</h1>
+            <h1><img src="icons/lightning.svg" height="20px"> Magnet Archive</h1> <!-- site header and logo, links to home page -->
         </a>
         <ul>
-            <li class="dropdown">
+            <li class="dropdown"> <!-- year pages contained within a dropdown menu -->
                 <button class="dropdown-toggle">Year</button>
                 <ul class="dropdown-menu">
                     <li><a href="year_2018.html">2018</a></li>
@@ -55,14 +57,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 <br><br><br>
 
-<!-- top section of each page -->
-            <div class="year-container">
-                <div class="year">2024</div>
-            </div>
+<!-- Title - each page begins with the same header and subhead style -->
+<div class="year-container">
+    <div class="year">2024</div>
+</div>
 
-            <div class="countries-container">
-            <div class="countries">U.S.A., Ireland & Canada</div>
-            </div>
+<div class="countries-container">
+    <div class="countries">U.S.A., Ireland & Canada</div>
+</div>
 <!------------------------------>
 
 <!-- begin magnet section, repeatable format for each year page -->
@@ -409,6 +411,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
 
                     <main>
+                        I have no recollection of where I purchased this magnet on the trip.
                     </main>
                 </div>
             </div>
@@ -438,14 +441,30 @@ document.addEventListener("DOMContentLoaded", () => {
                         <div class="magnet-title">Toronto</div>
                     </div>
                     <main>
-                    09/2024<br><br>
+                        09/2024<br><br>
+                        Free giveaway in the OCAD main building lobby.
                     </main>
                 </div>
             </div>
-    <br>
-    <br>
+<br>
+<br>
 
-<div class="footer"></div>
+<!-- back to top "button" -->
+<div class="clickable2">
+    <a href="year_2024.html#top">Back to Top</a>
+</div>
+
+<!-- Footer - links to About page -->
+<div class="footer">
+    <br>
+    <br>
+    &#9733; Want to learn more about this website? &#9733;
+    <div class="clickable2"> 
+        <a href="about.html">Click Here!</a>
+    </div>
+</div>
+
+</body>
 
 <!-- ----------------------------------------------------------------------------------------------------- -->
 <!-- PROCESS: OLD CODE -->
@@ -631,5 +650,3 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div class="description">lorem ipsum lorem ipsum lorem ipsum</div>
                 </main>
             </div> -->
-
-</body>
