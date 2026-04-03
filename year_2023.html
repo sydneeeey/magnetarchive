@@ -19,6 +19,8 @@
 <script>
 document.addEventListener("DOMContentLoaded", () => {
 
+// hover dropdown works on mobile
+
     const dropdown = document.querySelector('.dropdown');
     const toggle = document.querySelector('.dropdown-toggle');
 
@@ -32,10 +34,10 @@ document.addEventListener("DOMContentLoaded", () => {
 <div class="header">
     <nav>
         <a href="index.html" class="logo-link">
-            <h1><img src="icons/lightning.svg" height="20px"> Magnet Archive</h1>
+            <h1><img src="icons/lightning.svg" height="20px"> Magnet Archive</h1> <!-- site header and logo, links to home page -->
         </a>
         <ul>
-            <li class="dropdown">
+            <li class="dropdown"> <!-- year pages contained within a dropdown menu -->
                 <button class="dropdown-toggle">Year</button>
                 <ul class="dropdown-menu">
                     <li><a href="year_2018.html">2018</a></li>
@@ -55,14 +57,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 <br><br><br>
 
-<!-- top section of each page -->
-            <div class="year-container">
-                <div class="year">2023</div>
-            </div>
+<!-- Title - each page begins with the same header and subhead style -->
+<div class="year-container">
+    <div class="year">2023</div>
+</div>
 
-            <div class="countries-container">
-            <div class="countries">United Kingdom, <br>Denmark, Germany, Estonia, Finland & Sweden</div>
-            </div>
+<div class="countries-container">
+    <div class="countries">United Kingdom, <br>Denmark, Germany, Estonia, Finland & Sweden</div>
+</div>
 <!------------------------------>
 
 <!-- begin magnet section, repeatable format for each year page -->
@@ -75,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div class="canada-place">Canada - Toronto</div> <!-- different css for each country (background colour) -->
                 </div>
             </div>
-            <hr>
+            <hr id="toronto">
             </section>
 
             <div class="magnet-container" id="Hamilton">
@@ -93,7 +95,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     
                     <main>
-                        06/2023
+                        06/03/2023 <br><br>
+                        Trip to Toronto to see Hamilton at the Princess of Wales Theatre.
                     </main>
                 </div>
             </div>
@@ -125,8 +128,11 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     
                     <main>
-                        07/2023 <br><br>
-
+                        07/08/2023 <br><br>
+                        Drove from Heathrow airport to Windsor, saw Windsor Castle, then drove from Windsor to Dover.
+                        <br><br>
+                        07/09/2025 - 07/10/2025 <br><br> 
+                        Boarded our cruise ship in Dover, then had a day at sea.
                     </main>
                 </div>
             </div>
@@ -158,8 +164,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     
                     <main>
-                        07/2023 <br><br>
-
+                        07/11/2023 <br><br>
+                        After arriving in Copenhagen, we took a Hop on Hop Off bus, then walked around. We saw the Little Mermaid statue and the Gefion Fountain. Walked the Nyhavn canal district, saw the Kongens Nytorv plaza, Vimmelskaftet street and went into the Tivoli Gardens theme park.
                     </main>
                 </div>
             </div>
@@ -191,8 +197,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     
                     <main>
-                        07/2023 <br><br>
-
+                        07/12/2023 <br><br>
+                        After leaving the boat, we hopped on a train to Berlin for a tour of the city. We began at Charlottenburg Palace and saw the Victory Column. Walked around the Brandenburg Gate area and saw the Memorial to the Murdered Jews of Europe. We went to the outdoor area of the Topography of Terror museum, saw Checkpoint Charlie and the Bebelplatz plaza.
                     </main>
                 </div>
             </div>
@@ -224,8 +230,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     
                     <main>
-                        07/2023 <br><br>
-
+                        07/14/2023 <br><br>
+                        Wandered around the city, went inside Helsinki Cathedral, then took a ferry to Korkeasaari Helsinki Zoo for the rest of the day.
                     </main>
                 </div>
             </div>
@@ -245,8 +251,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     
                     <main>
-                        07/2023 <br><br>
-
                     </main>
                 </div>
             </div>
@@ -278,8 +282,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     
                     <main>
-                        07/2023 <br><br>
-
+                        07/15/2023 <br><br>
+                        Wandered around the city, went inside Helsinki Cathedral then took a ferry to Korkeasaari Helsinki Zoo for the rest of the day.
                     </main>
                 </div>
             </div>
@@ -299,8 +303,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     
                     <main>
-                        07/2023 <br><br>
-
                     </main>
                 </div>
             </div>
@@ -332,7 +334,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     
                     <main>
-                        07/2023 <br><br>
+                        07/16/2023 <br><br>
+                        Wandered around the city and went to ABBA The Museum.
 
                     </main>
                 </div>
@@ -353,8 +356,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     
                     <main>
-                        07/2023 <br><br>
-
                     </main>
                 </div>
             </div>
@@ -386,7 +387,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     
                     <main>
-                        07/2023 <br><br>
+                        07/18/2023 <br><br>
+                        Our cruise ship broke down, so we had to stay in Kiel, missing all of the remaining stops on the trip. From Kiel we flew back to London.
 
                     </main>
                 </div>
@@ -419,8 +421,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     
                     <main>
-                        07/2023 <br><br>
-
+                        07/22/2023 <br><br>
+                        Got settled at our hotel and wandered around the area, saw The Meeting Place Statue.
                     </main>
                 </div>
             </div>
@@ -440,7 +442,12 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     
                     <main>
-                        07/2023 <br><br>
+                        07/23/2023 <br><br>
+                        Wandered the Theatre District, had afternoon tea and saw Mamma Mia at the Duchess Theatre. We saw the Tower Bridge, then took a river boat to Big Ben, explored Westminster Abbey and the Buckingham Palace area.
+                        <br><br>
+                        07/24/2023 <br><br>
+                        St. Paul's Cathedral.
+
 
                     </main>
                 </div>
@@ -449,6 +456,19 @@ document.addEventListener("DOMContentLoaded", () => {
 <br>
 <br>
 
-<div class="footer"></div>
+<!-- back to top "button" -->
+<div class="clickable2">
+    <a href="year_2023.html#top">Back to Top</a>
+</div>
+
+<!-- Footer - links to About page -->
+<div class="footer">
+    <br>
+    <br>
+    &#9733; Want to learn more about this website? &#9733;
+    <div class="clickable2"> 
+        <a href="about.html">Click Here!</a>
+    </div>
+</div>
 
 </body>
