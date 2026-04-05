@@ -304,7 +304,7 @@ hr{
         font-size: 1.25rem;
     }
 }
-@media (max-width: 400px){
+@media (max-width: 400px) {
     .destination{
         font-size: 0.8rem;
     }
@@ -312,10 +312,25 @@ hr{
         font-size: 0.8rem;
     }
     .year2{
-        height: 3.25rem;
-        font-size: 2.75rem;
+        height: 3rem;
+        font-size: 2.5rem;
     }
 }
+
+@media (max-width: 315px) {
+    .destination{
+        font-size: 0.8rem;
+    }
+    .place{
+        font-size: 0.8rem;
+    }
+    .year2{
+        height: 2.75rem;
+        font-size: 2.25rem;
+    }
+}
+
+
 
 /* background formatting for each country - assigned colours, situated within the .place */
     /* place - original format, for destination section */
@@ -881,7 +896,7 @@ main{
         font-size: 0.75rem;
     }
 }
-@media (max-width: 400px) {
+@media (min-width: 0px) and (max-width: 400px) {
     .info main {
         font-size: 1rem;
         margin-right: 1rem;
